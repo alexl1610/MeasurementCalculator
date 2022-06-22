@@ -23,4 +23,13 @@ public class MeasurementController {
         return calc.stone(stone);
     }
 
+    @RequestMapping("/")
+    public String start() {
+        return "Welcome to the Measurement Calculator!" + "<br>" +
+                "This service converts imperial values to metric ones. " + "<br>" + "<br>" +
+                "The following options are available:" + "<br>" +
+                "/gram?ounce=X -> To convert X ounces in gram" + "<br>" +
+                "/kilogram?stone=X -> To convert X stones in kilogram";
+    }
+
 }
