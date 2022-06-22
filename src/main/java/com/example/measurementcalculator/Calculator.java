@@ -6,4 +6,8 @@ public class Calculator {
         return oz * 28.35;
     }
 
+    public double stone (double st) {
+        return st * 6.35;
+    }
+
 }

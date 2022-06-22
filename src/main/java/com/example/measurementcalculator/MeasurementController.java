@@ -16,4 +16,11 @@ public class MeasurementController {
         return calc.ounce(ounce);
     }
 
+    @RequestMapping("/kilogram")
+    public double stoneToKilogram(
+            @RequestParam double stone
+    ) {
+        return calc.stone(stone);
+    }
+
 }
