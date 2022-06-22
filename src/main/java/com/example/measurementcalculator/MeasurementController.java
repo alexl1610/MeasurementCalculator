@@ -13,7 +13,7 @@ public class MeasurementController {
     public double ounceToGram(
             @RequestParam double ounce
     ) {
-        return calc.inch(ounce);
+        return calc.ounce(ounce);
     }
 
 }
