@@ -18,4 +18,9 @@ class CalculatorTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void stoneTest() {
+        assertEquals(6.35, calc.stone(1));
+    }
+
 }
